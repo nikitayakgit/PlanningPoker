@@ -1,6 +1,6 @@
 const socket = io();
 
-const sessionId = window.location.pathname.split("/session/")[1];
+const sessionId = window.location.pathname.split("/").filter(Boolean).pop();
 
 const joinModal = document.getElementById("joinModal");
 const joinBtn = document.getElementById("joinBtn");
@@ -66,13 +66,11 @@ joinBtn.onclick = () => {
 
   role = roleInput.value;
 
-socket.on("connect", () => {
   socket.emit("join-session", {
     sessionId,
     name,
     role
   });
-});
 
   joinModal.style.display = "none";
 

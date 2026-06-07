@@ -37,10 +37,10 @@ app.get("/create-session", (req, res) => {
   const id = createSessionId();
 
   sessions[id] = {
-    revealed: false,
-    users: {},
-    votes: {}
-  };
+  revealed: false,
+  users: {},
+  votes: {}
+};
 
   res.json({
     sessionId: id,

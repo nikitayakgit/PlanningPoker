@@ -1,4 +1,6 @@
-const socket = io();
+const socket = io(window.location.origin, {
+  transports: ["websocket", "polling"]
+});
 
 const sessionId = window.location.pathname.split("/").filter(Boolean).pop();
 

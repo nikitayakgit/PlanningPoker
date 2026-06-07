@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Planning Poker</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div class="center-card">
+  <h1>Planning Poker</h1>
+  <p>Create a new session</p>
+
+  <button id="createBtn">Create Session</button>
+</div>
+
+<script>
+document.getElementById("createBtn").onclick = async () => {
+  const res = await fetch("/create-session");
+  const data = await res.json();
+  window.location.href = data.url;
+};
+</script>
+
+</body>
+</html>

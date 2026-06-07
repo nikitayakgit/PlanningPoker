@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Planning Poker</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+<div id="joinModal" class="modal">
+  <div class="modal-content">
+    <h2>Join Session</h2>
+
+    <input
+      id="nameInput"
+      placeholder="Your Name"
+    />
+
+    <select id="roleInput">
+      <option value="player">Player</option>
+      <option value="observer">Observer</option>
+    </select>
+
+    <button id="joinBtn">Join</button>
+  </div>
+</div>
+
+<div class="container">
+
+  <div class="header">
+    <h1>Planning Poker</h1>
+
+    <button id="copyLink">
+      Copy Invite Link
+    </button>
+  </div>
+
+  <div class="panel">
+
+    <h2>Participants</h2>
+
+    <div id="users"></div>
+
+  </div>
+
+  <div class="panel">
+
+    <h2>Vote</h2>
+
+    <div id="voteButtons"></div>
+
+  </div>
+
+  <div class="panel">
+
+    <button id="revealBtn">
+      Reveal Votes
+    </button>
+
+    <button id="clearBtn">
+      Clear Votes
+    </button>
+
+  </div>
+
+  <div class="panel">
+
+    <h2>Results</h2>
+
+    <div id="results"></div>
+
+  </div>
+
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/app.js"></script>
+
+</body>
+</html>

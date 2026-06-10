@@ -20,7 +20,7 @@ When deployed on your web-provider of choice and given a static URL, navigate to
 <img width="454" height="215" alt="image" src="https://github.com/user-attachments/assets/3052bdd3-11b6-4d48-9bc0-f961f2588e30" />
 
 You will be prompted to created a session. Doing so brings up the window to choose if you'd like to create as a player or an observer.
-The key diffrence is the fact that observers do not vote, but are able to perform other actions.
+The key diffrence is the fact that observers do not vote, but can perform other actions.
 <img width="745" height="515" alt="image" src="https://github.com/user-attachments/assets/ce24695b-f5ca-4f8c-a316-ec306dcc16e6" />
 
 The user is then able to copy the invite link, to allow other users to join. I will create 3 users total for demonstration.

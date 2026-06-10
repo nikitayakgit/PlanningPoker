@@ -7,8 +7,8 @@ These are the key requirements which were defined by myself and Shay:
 4. The app does not rely on a single user host
 
 To run locally, the user needs to have node.js installed and run the following commands:
->npm install
->npm start
+-npm install
+-npm start
 Afterwards navigate to http://localhost:3000/ and use for local testing. This is however local.
 For public connections, a web services provider is needed. At this time, we use Render, but possibly will migrate to Netlify.
 
@@ -59,9 +59,9 @@ The usage originates from HTTP and WebSocket responses.
 Besides simplistic UI, an additional feature implemented was package-lock, to ensure the **dependencies are always compatible**.
 Also, in-memory storage, meaning **no session data gets saved**.
 Here are some other features that could be implemented but were not to keep this app simple:
->Dark theme
->Confidence meter
->Custom vote values/"Not Sure" Values
+-Dark theme
+-Confidence meter
+-Custom vote values/"Not Sure" Values
 
 ________________________________________
 

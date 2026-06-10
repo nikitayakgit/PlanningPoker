@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -22,5 +22,44 @@ document.getElementById("createBtn").onclick = async () => {
 };
 </script>
 
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Planning Poker</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+ 
+<div class="center-card">
+  <h1>Planning Poker</h1>
+  <p>Create a new session</p>
+ 
+  <button id="createBtn">Create Session</button>
+</div>
+ 
+<script>
+document.getElementById("createBtn").onclick = async () => {
+  const res = await fetch("/create-session");
+  const data = await res.json();
+  window.location.href = data.url;
+};
+</script>
+ 
+<footer class="app-footer">
+  &copy; 2026 Planning Poker. Authors:
+  <strong><a href="https://fidelitycentral.fmr.com/ww/a760559" target="_blank" rel="noopener noreferrer">Yeshi Yue</a></strong>
+  and
+  <strong><a href="https://fidelitycentral.fmr.com/ww/a732627" target="_blank" rel="noopener noreferrer">Nikita Yakovlev</a></strong>.
+</footer>
+ 
 </body>
 </html>

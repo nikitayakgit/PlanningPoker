@@ -1,4 +1,4 @@
-The purpose of this app is to create a lightweight web-based polling sessions.
+The purpose of this app is to create lightweight web-based polling sessions.
 
 These are the key requirements which were defined by myself and Shay:
 1. The app has to support a dynamic number of users
@@ -43,8 +43,10 @@ ________________________________________
 
 **Memory, session-end, and additional notes**
 
-For memory consumption, me and Shay conducted the a manual test with 8 players, 1 observers, each voting 25 rounds.
+For memory consumption, me and Shay conducted the a manual test with 9 players, 1 observer, each voting 25 rounds.
 The following was the memory consumption. Further longer term testing needs to be done to understand if a token based provider is better.
+<img width="3146" height="663" alt="image" src="https://github.com/user-attachments/assets/71da960e-a5d3-46d7-8389-938f1a0a0c44" />
+
 
 
 While some code was created locally to force a session end, at this time it is not yet implemented.

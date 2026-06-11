@@ -100,6 +100,11 @@ clearBtn.onclick = () => {
   renderVoteButtons();
 };
 
+socket.on("votes-cleared", () => {
+  selectedVote = null;
+  renderVoteButtons();
+});
+
 socket.on("session-missing", () => {
   alert("Session no longer exists.");
   location.href = "/";

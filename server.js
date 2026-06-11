@@ -100,6 +100,7 @@ io.on("connection", (socket) => {
     session.votes = {};
     session.revealed = false;
 
+    io.to(sessionId).emit("votes-cleared");
     io.to(sessionId).emit("state-update", buildState(session));
   });
 

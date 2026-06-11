@@ -56,6 +56,12 @@ This does not however mean the app is innaccessible. When the user navigates to 
 
 This takes 10-15 seconds to spin up. Then the server is up. Users simply existing does not cause the usage to spike.
 The usage originates from HTTP and WebSocket responses.
+As one of the requirements states, the app does not impose limits on player count. See below.
+<img width="1701" height="1627" alt="image" src="https://github.com/user-attachments/assets/9e6e85ec-1f5e-4722-86a0-5ebb394307a0" />
+
+Additionally, the app is capable of having more than one session. Here's me having 3 different sessions simultaneously.
+<img width="3838" height="2086" alt="image" src="https://github.com/user-attachments/assets/0242ff03-c930-4db5-bf31-c0d25d01ecd7" />
+
 
 
 Besides simplistic UI, an additional feature implemented was package-lock, to ensure the **dependencies are always compatible**.
